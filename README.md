@@ -232,22 +232,21 @@
 
 #### ImageNet-1k上的NFNet
 
-| 参数                 |       |Ascend|
-| -------------------------- | ----------------| -----------------|
-|模型|NFNet|NFNet|
-| 模型版本              | NFNet-F0 |NFNet-F0|
-| 资源                   | RTX 3090 | Ascend910|
-| 上传日期              | 2021-11-17        |2021-11-25|
-| MindSpore版本          | 1.5.0                   |1.3.0|
-| 数据集                    | ImageNet-1k Train，共1,281,167张图像|ImageNet-1k Train，共1,281,167张图像 |                                              |
-| 训练参数        | epoch=360, batch_size=128            | epoch=360, batch_size=128|
-| 优化器                  | AGC_SGD         |AGC_SGD|
-| 损失函数              | SoftTargetCrossEntropy  |SoftTargetCrossEntropy|
+| 参数                 |       Ascend|
+| -------------------------- |-----------------|
+|模型|NFNet|NFNet|NFNet-F0|
+| 资源                   |  Ascend910|
+| 上传日期              | 2021-11-25|
+| MindSpore版本          | 1.3.0|
+| 数据集                    | ImageNet-1k Train，共1,281,167张图像 |                                              |
+| 训练参数        |  epoch=360, batch_size=128|
+| 优化器                  | AGC_SGD|
+| 损失函数              | SoftTargetCrossEntropy|
 | 损失|0.9339|0.8910|
-| 输出                    | 概率                                                 |概率|
-| 分类准确率             | 八卡：top1: 82.74% top5: 96.20%    |八卡：top1: 83.02% top5: 96.46%  |
-| 速度                      | 八卡：955.82毫秒/步        |八卡：1505.03毫秒/步 |
-| 训练耗时          |136h58m（8p 3090）|191h17m（8p Ascend910）|
+| 输出                    |概率|
+| 分类准确率             | 八卡：top1: 83.02% top5: 96.46%  |
+| 速度                      | 八卡：1505.03毫秒/步 |
+| 训练耗时          |191h17m（8p Ascend910）|
 
 ### 推理性能
 
