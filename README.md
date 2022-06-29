@@ -196,25 +196,7 @@
 
 [hccl工具](https://gitee.com/mindspore/models/tree/master/utils/hccl_tools)
 
-- 处理器环境运行
 
-  ```bash
-  # 使用python启动单卡训练
-  python train.py --device_id 0 --device_target  --config ./src/configs/dm_nfnet_f0.yaml > train.log 2>&1 &
-
-  # 使用脚本启动单卡训练
-  bash ./scripts/run_standalone_train_.sh [DEVICE_ID] [CONFIG_PATH]
-
-  # 使用脚本启动多卡训练
-  bash ./scripts/run_distribute_train_.sh [DEVICE_NUM] [CUDA_VISIBLE_DEVICES] [CONFIG_PATH]
-
-  # 使用python启动单卡运行评估示例
-  python eval.py --device_id 0 --device_target  --config ./src/configs/dm_nfnet_f0.yaml \
-  --pretrained ./ckpt_0/dm_nfnet_f0.ckpt > ./eval.log 2>&1 &
-
-  # 使用脚本启动单卡运行评估示例
-  bash ./scripts/run_eval_.sh [DEVICE_ID] [CONFIG_PATH] [CHECKPOINT_PATH]
-  ```
 
 ## 导出过程
 
